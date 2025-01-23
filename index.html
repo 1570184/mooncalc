@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="bounding">
+<div class="outputbox">
+<div class="parameters">
+<div class="upperblock" id="result">100%</div>
+<div class="upperblock" id="caption">Расчёт здоровья после падения</div>
+<div class="upperblock" id="strip">
+<div id="strip2"></div>
+</div>
+</div></div>
+<div class="inpbox">
+<div class="param"><div class="parameters">Луны: </div>
+<div><select class="field" id="age" name="age">
+  <option value="1">взрослый (6+ лун)</option>
+  <option value="1.2">котёнок (3-5 лун)</option>
+  <option value="1.5">котёнок (0-3 лун)</option>
+</select></div>
+</div>
+<div class="param"><div class="parameters">Здоровье</div> 
+<div><input class="field" type="number" id="hp" name="hp" min="1" max="100" maxlength=3 size=3 value=100>% </input></div>
+</div>
+<div class="param"><div class="parameters">ЛУ </div>
+<input class="field" type="number" id="skill" name="skill" min="1" max="10" maxlength=3 size=3 value=5> </input>
+</div>
+<div class="param"><div class="parameters">Высота </div>
+<select class="field" id="level" name="level">
+  <option value="1">(1) ПС</option>
+  <option value="2">(2) ШУ</option>
+  <option value="3">(3) ОУ</option>
+  <option value="4">(4) ОС</option>
+  <option value="5">(5) ВВК</option>
+</select>
+</div>
+<div class="param"><div class="parameters">Перьев: </div>
+<div><input class="field" type="number" id="feather" name="feather" min="0" max="10" maxlength=3 size=3 value=0> шт</input></div>
+</div>
+<div class="param"><div class="parameters">Лечиться?</div>
+<button class="reset" id="reset">Да!</button>
+</div>
+<div>
+</div>
+</div>
+</div>
+</div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
