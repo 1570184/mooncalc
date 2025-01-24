@@ -17,21 +17,22 @@
 <div class="outputbox">
 <div class="parameters">
 <div class="upperblock" id="result">100%</div>
-<div class="upperblock" id="caption">Расчёт здоровья после падения</div>
+<div class="upperblock"><div id="caption">Расчёт здоровья после падения</div>
+  <div id="warning">Не осматривай расщелины на этой высоте! Может быть смертельно.</div></div>
 <div class="upperblock" id="strip">
 <div id="strip2"></div>
 </div>
 </div></div>
 <div class="inpbox">
-<div class="param"><div class="parameters">Луны: </div>
-<div><select class="field" id="age" name="age">
-  <option value="1">взрослый (6+ лун)</option>
+<div class="param"><div class="parameters">Луны </div>
+<select class="field" id="age" name="age">
+  <option value="1">взрослый (от 6 лун)</option>
   <option value="1.2">котёнок (3-5 лун)</option>
-  <option value="1.5">котёнок (0-3 лун)</option>
-</select></div>
+  <option value="1.5">котёнок (до 3 лун)</option>
+</select>
 </div>
 <div class="param"><div class="parameters">Здоровье</div> 
-<div><input class="field" type="number" id="hp" name="hp" min="1" max="100" maxlength=3 size=3 value=100>% </input></div>
+<input class="field" type="number" id="hp" name="hp" min="1" max="100" maxlength=3 size=3 value=100></input>
 </div>
 <div class="param"><div class="parameters">ЛУ </div>
 <input class="field" type="number" id="skill" name="skill" min="1" max="10" maxlength=3 size=3 value=5> </input>
@@ -46,11 +47,14 @@
 </select>
 </div>
 <div class="param"><div class="parameters">Перьев: </div>
-<div><input class="field" type="number" id="feather" name="feather" min="0" max="10" maxlength=3 size=3 value=0> шт</input></div>
+<input class="field" type="number" id="feather" name="feather" min="0" max="10" maxlength=3 size=3 value=0></input>
 </div>
-<div class="param"><div class="parameters">Лечиться?</div>
-<button class="reset" id="reset">Да!</button>
+<div class="param"><div class="parameters">Упасть ещё?</div>
+<button class="reset" id="iteration">Да!</button>
 </div>
+<div class="param">
+  <div class="parameters">Лечиться?</div>
+<button class="reset" id="reset">Да!</button></div>
 <div>
 </div>
 </div>
